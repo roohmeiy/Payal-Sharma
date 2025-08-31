@@ -229,4 +229,28 @@
 })();
 
 
+        function viewFullResume() {
+        
+            const resumeUrl = 'https://drive.google.com/file/d/1WPEZnC_x9o9GswbbInp27VIRBUv2yl2s/view?usp=sharing'; 
+            
+            // Open in new tab/window
+            window.open(resumeUrl, '_blank');
+            
+            showViewMessage();
+        }
 
+        function showViewMessage() {
+            const btn = document.querySelector('.download-btn');
+            const originalText = btn.innerHTML;
+            
+            btn.innerHTML = `
+                <svg class="download-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" fill="currentColor"/>
+                </svg>
+                <span class="btn-text">Opening...</span>
+            `;
+            
+            setTimeout(() => {
+                btn.innerHTML = originalText;
+            }, 2000);
+        }
