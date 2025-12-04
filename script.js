@@ -231,7 +231,7 @@
 
         function viewFullResume() {
         
-            const resumeUrl = 'https://drive.google.com/file/d/1WPEZnC_x9o9GswbbInp27VIRBUv2yl2s/view?usp=sharing'; 
+            const resumeUrl = 'https://drive.google.com/file/d/1JPPOhwnMZG65flNpDQWsy6DoaYB7h9Pa/view?usp=drivesdk'; 
             
             // Open in new tab/window
             window.open(resumeUrl, '_blank');
